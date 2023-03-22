@@ -8,18 +8,21 @@ const App = () => {
   return (
     <div id="main">
       <BrowserRouter>
-        <Switch>
-          <Route>
+    
+         
             <div id='navbar'>
-              <div id='home-link'> Home</div>
-              <div id='aboutus-link'>About Us</div>
+              <Link to="/home" id='home-link' > Home</Link>
+              <Link to="/about-us" id='aboutus-link' >About Us</Link>
             </div>
-          </Route>
-          <Route>
+          <Switch>
+          <Route path="/home">
             <Home />
           </Route>
-          <Route >
+          <Route path="/about-us">
             <AboutUs />
+          </Route>
+          <Route path='/'>
+            <Redirect to='/home' />
           </Route>
         </Switch>
       </BrowserRouter>
