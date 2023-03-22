@@ -8,8 +8,6 @@ const App = () => {
   return (
     <div id="main">
       <BrowserRouter>
-    
-         
             <div id='navbar'>
               <Link to="/home" id='home-link' > Home</Link>
               <Link to="/about-us" id='aboutus-link' >About Us</Link>
@@ -22,7 +20,7 @@ const App = () => {
             <AboutUs />
           </Route>
           <Route path='/'>
-            <Redirect to='/home' />
+            <Redirect to='/' />
           </Route>
         </Switch>
       </BrowserRouter>

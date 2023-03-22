@@ -4,7 +4,7 @@ const AboutUs = () => {
     return (
         <div id='aboutus-page'>
             Welcome to About Us Page<br />
-            <Link to='/'>Go back</Link>
+            <button><Link to='/'>Go back</Link></button>
         </div>
     )
 }
