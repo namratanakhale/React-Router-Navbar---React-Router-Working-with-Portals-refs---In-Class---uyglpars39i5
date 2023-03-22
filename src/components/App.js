@@ -20,7 +20,7 @@ const App = () => {
             <AboutUs />
           </Route>
           <Route path='/'>
-            <Redirect to='/' />
+            <Redirect to='/home' />
           </Route>
         </Switch>
       </BrowserRouter>
